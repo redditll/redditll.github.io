@@ -34,6 +34,9 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
+header1 {
+  color: white;
+}
 
 ol, ul {
   list-style: none;
@@ -570,3 +573,4 @@ Small Device Styles
 * html #menu-bar {
   height: 1%;
 }
+
