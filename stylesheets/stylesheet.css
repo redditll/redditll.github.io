@@ -162,7 +162,7 @@ display:none;
     border-radius: 3px;
     padding: 3px 6px;
 	display: block;
-	border-bottom:1px solid #E67248;
+	border-bottom:1px solid #5846a9;
 	    box-shadow: 0 1px 2px #e67248;
 		-webkit-box-shadow: 0 1px 2px #e67248;
 		-moz-box-shadow: 0 1px 2px #e67248;
@@ -240,7 +240,7 @@ margin-right:25px;
 		background:inherit !important;
 }
 .left-images > p {
-    background: none repeat scroll 0 0 #ff7f50;
+    background: none repeat scroll 0 0 #5846a9;
     display: block;
     font-size: 18px;
     line-height: normal;
@@ -253,7 +253,7 @@ margin-right:25px;
     text-transform: uppercase;
 }
 .mm-view-more{
-	background: none repeat scroll 0 0 #ff7f50;
+	background: none repeat scroll 0 0 #5846a9;
     color: #fff;
     display: inline !important;
     line-height: normal;
