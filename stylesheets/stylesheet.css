@@ -160,6 +160,7 @@ nav.menu {
 }
 .xs-menu-cont{
 display:none;
+background: #5846a9;
 }
 .xs-menu-cont > a {
     background: none repeat scroll 0 0 #5846a9;
