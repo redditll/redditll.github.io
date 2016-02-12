@@ -51,6 +51,10 @@ table {
 Theme Styles
 *******************************************************************************/
 
+html {
+	background-color:#FFFFF0;
+	background:#FFFFF0;
+}
 body {
   box-sizing: border-box;
   color:#373737;
