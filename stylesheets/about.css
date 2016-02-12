@@ -13,14 +13,14 @@
   margin: auto;
 }
 
-.container {
+.container1 {
   margin: 20px;
   margin-bottom: 0;
   position: relative;
   display: inline-block;
 }
 
-.body {
+.mainabout {
   position: relative;
   padding: 10px;
   width: 80%;
