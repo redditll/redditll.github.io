@@ -2869,7 +2869,7 @@
 				.wrapper.style1 input[type="button"].special,
 				.wrapper.style1 button.special,
 				.wrapper.style1 .button.special {
-					background-color: #009a9c;
+					background-color: #;
 					color: #fff !important;
 				}
 
@@ -3000,7 +3000,7 @@
 			}
 
 				.wrapper.style1 .feature .fa {
-					color: #009a9c;
+					color: #302832;
 				}
 
 		.wrapper.style2 {
@@ -3224,7 +3224,7 @@
 				}
 
 		.wrapper.style3 {
-			background-color: #009a9c;
+			background-color: #302832;
 			color: #ddd;
 		}
 
@@ -3609,7 +3609,7 @@
 			#banner input[type="button"].special,
 			#banner button.special,
 			#banner .button.special {
-				background-color: #009a9c;
+				background-color: #302832;
 				color: #fff !important;
 			}
 
@@ -3618,7 +3618,7 @@
 				#banner input[type="button"].special:hover,
 				#banner button.special:hover,
 				#banner .button.special:hover {
-					background-color: #00b4b5;
+					background-color: #5846a9;
 				}
 
 				#banner input[type="submit"].special:active,
@@ -3626,7 +3626,7 @@
 				#banner input[type="button"].special:active,
 				#banner button.special:active,
 				#banner .button.special:active {
-					background-color: #008183;
+					background-color: #302832;
 				}
 
 		#banner h2 {
