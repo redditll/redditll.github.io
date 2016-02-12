@@ -1973,7 +1973,7 @@
 		input[type="button"].special,
 		button.special,
 		.button.special {
-			background-color: #00cdcf;
+			background-color: #5846a9;
 			color: #ffffff !important;
 		}
 
@@ -1982,7 +1982,7 @@
 			input[type="button"].special:hover,
 			button.special:hover,
 			.button.special:hover {
-				background-color: #00e6e9;
+				background-color: #5846a9;
 			}
 
 			input[type="submit"].special:active,
@@ -1990,7 +1990,7 @@
 			input[type="button"].special:active,
 			button.special:active,
 			.button.special:active {
-				background-color: #00b4b5;
+				background-color: #302832;
 			}
 
 /* Form */
