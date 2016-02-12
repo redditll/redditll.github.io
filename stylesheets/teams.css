@@ -1,57 +1,265 @@
-.glyphicon {
-  margin-right: 5px;
+
+* {
+  padding: 0;
+  margin: 0;
 }
 
-.thumbnail {
-  margin-bottom: 20px;
-  padding: 0px;
-  -webkit-border-radius: 0px;
-  -moz-border-radius: 0px;
-  border-radius: 0px;
+html {
+  box-sizing: border-box;
 }
 
-.item.list-group-item {
-  float: none;
-  width: 100%;
-  background-color: #fff;
-  margin-bottom: 10px;
+html *,
+html *:before,
+html *:after {
+  box-sizing: inherit;
 }
 
-.item.list-group-item:nth-of-type(odd):hover,
-.item.list-group-item:hover {
-  background: #428bca;
-}
-
-.item.list-group-item .list-group-image {
-  margin-right: 10px;
-}
-
-.item.list-group-item .thumbnail {
-  margin-bottom: 0px;
-}
-
-.item.list-group-item .caption {
-  padding: 9px 9px 0px 9px;
-}
-
-.item.list-group-item:nth-of-type(odd) {
-  background: #eeeeee;
-}
-
-.item.list-group-item:before,
-.item.list-group-item:after {
-  display: table;
-  content: " ";
-}
-
-.item.list-group-item img {
-  float: left;
-}
-
-.item.list-group-item:after {
+.clearfix:after {
+  content: '';
+  display: block;
   clear: both;
+  width: 0;
+  height: 0;
 }
 
-.list-group-item-text {
-  margin: 0 0 11px;
+body {
+  font: 100%/1.375em 'Exo 2', sans-serif;
+  background: #f3f4f4;
+}
+
+h1 {
+  margin-bottom: 0.5em;
+  color: #2761B1;
+  font-size: 200%;
+  font-weight: bold;
+  text-align: center;
+}
+
+.team {
+  list-style: none;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.csstransforms3d .records {
+  -webkit-perspective: 2000;
+  perspective: 2000;
+}
+
+.team li {
+  position: relative;
+  display: inline-block;
+  width: 300px;
+  height: 420px;
+  margin: 0.5em;
+  text-align: left;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+.csstransforms3d .team li {
+  -webkit-transition: 200ms;
+  transition: 200ms;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.csstransforms3d .team .flip {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.team .front,
+.team .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #eee;
+  background-repeat: no-repeat;
+  border: 10px solid #fff;
+}
+
+.team .front {
+  background-position: center;
+  background-size: cover;
+}
+/*
+.records .back {
+  background-image: url(http://img.lrytas.lt/show_foto/?id=368832&f=4&s=19);
+  background-size: 100%;
+  background-position: center -7.5em;
+}
+*/
+
+.team .back,
+.team .flip .front {
+  display: none;
+}
+
+.team .flip .back {
+  display: block;
+}
+
+.csstransforms3d .team .front,
+.csstransforms3d .team .back {
+  display: block;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.csstransforms3d .team .front {
+  -webkit-transform: rotateY(0);
+  transform: rotateY(0);
+}
+
+.csstransforms3d .team .back {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.team .front:after {
+  content: '';
+  position: absolute;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.team .front[data-team="president"]:after {
+  top: 10px;
+  right: 10px;
+  width: 2.5em;
+  height: 2.5em;
+  background-image: url(http://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Seal_of_the_President_of_the_United_States.svg/2000px-Seal_of_the_President_of_the_United_States.svg.png);
+}
+
+.team h3 {
+  position: absolute;
+  top: 100%;
+  left: 10px;
+  width: 400px;
+  padding: 0.5em 3em 0.5em 0.75em;
+  color: #fff;
+  font-size: 120%;
+  background: rgba(39, 97, 177, 0.7);
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+
+.record-value {
+  position: absolute;
+  bottom: 30px;
+  right: 10px;
+  min-width: 1.65em;
+  padding: 0.15em 0.25em;
+  color: #f92222;
+  font-size: 150%;
+  line-height: 1em;
+  font-weight: bold;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.record-value:after {
+  content: 'More info \00A0\00A0 ➤';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: block;
+  width: 100%;
+  padding: 0.5em;
+  color: #fff;
+  font-size: x-small;
+  line-height: 1em;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: right;
+  background: #f92222;
+}
+
+.record-date {
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  left: -10px;
+  display: inline-block;
+  padding: 0.572em 1em;
+  color: #fff;
+  text-transform: uppercase;
+  background: #f92222;
+}
+
+.back .record-date {
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  left: -10px;
+  display: inline-block;
+  padding: 0.572em 1em;
+  color: #fff;
+  text-transform: uppercase;
+  background: rgba(39, 97, 177, 0.7);
+}
+
+.record-details {
+  padding: 20px;
+  font-size: 87.5%;
+  overflow-y:auto;
+  overflow-x:hidden;
+  height:275px;
+  z-index:-1;
+  margin-top:120px;
+}
+
+.back img {
+  height:120px;
+  width:100%;
+  background-position: center -7.5em;
+  position:absolute;
+  top:0px;
+  left:0px;
+  z-index:1;
+}
+
+.obama .front {
+  background-image: url(http://upload.wikimedia.org/wikipedia/commons/e/e9/Official_portrait_of_Barack_Obama.jpg);
+}
+
+.bush .front {
+  background-image: url(http://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/George-W-Bush.jpeg/220px-George-W-Bush.jpeg);
+}
+
+.clinton .front {
+  background-image: url(http://upload.wikimedia.org/wikipedia/commons/4/49/44_Bill_Clinton_3x4.jpg);
+}
+
+.fixed {position:fixed;}
+
+.lb {
+	display: none;
+	position: fixed!important;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+  text-align:center;
+}
+
+.lb img {
+	max-width: 90%;
+	max-height: 80%;
+	margin-top: 2%;
+}
+
+.lb:target {
+	outline: none;
+	display: block;
 }
